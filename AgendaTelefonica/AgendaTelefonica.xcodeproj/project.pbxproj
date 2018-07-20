@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8392E24320FF661200FDB8E5 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8392E24220FF661200FDB8E5 /* Login.storyboard */; };
+		831B58142100B78200620585 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831B58132100B78200620585 /* UserViewModel.swift */; };
+		831B58162100BEA000620585 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831B58152100BEA000620585 /* Main.storyboard */; };
+		831B58182100BEFF00620585 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831B58172100BEFF00620585 /* Launch Screen.storyboard */; };
+		831B581A2100C2E800620585 /* SessionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831B58192100C2E800620585 /* SessionControl.swift */; };
+		831B581E2100C48000620585 /* Contatos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831B581D2100C48000620585 /* Contatos.storyboard */; };
+		831B58202100C4FF00620585 /* ContatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831B581F2100C4FF00620585 /* ContatosViewController.swift */; };
+		831B58272100C6AA00620585 /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831B58262100C6AA00620585 /* Contato.swift */; };
+		831B58292100CCD200620585 /* ContatosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831B58282100CCD200620585 /* ContatosViewModel.swift */; };
+		831B582C2100D01D00620585 /* ContatoRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831B582B2100D01D00620585 /* ContatoRequestFactory.swift */; };
+		831B582E2100D03500620585 /* ContatoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831B582D2100D03500620585 /* ContatoService.swift */; };
 		8392E24620FF670C00FDB8E5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8392E24520FF670C00FDB8E5 /* Localizable.strings */; };
 		8392E24820FF676400FDB8E5 /* Colors.json in Resources */ = {isa = PBXBuildFile; fileRef = 8392E24720FF676400FDB8E5 /* Colors.json */; };
-		8392E24C20FF6E5900FDB8E5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8392E24B20FF6E5900FDB8E5 /* Launch Screen.storyboard */; };
 		8392E25120FF6EA800FDB8E5 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8392E24D20FF6EA700FDB8E5 /* Assets.swift */; };
 		8392E25220FF6EA800FDB8E5 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8392E24E20FF6EA800FDB8E5 /* Storyboard.swift */; };
 		8392E25320FF6EA800FDB8E5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8392E24F20FF6EA800FDB8E5 /* Colors.swift */; };
@@ -19,7 +27,7 @@
 		8392E25920FF747F00FDB8E5 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8392E25820FF747F00FDB8E5 /* LoginService.swift */; };
 		8392E25C20FF782900FDB8E5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8392E25B20FF782900FDB8E5 /* User.swift */; };
 		C3BCE4FE20FE6EC50099B709 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BCE4FD20FE6EC50099B709 /* AppDelegate.swift */; };
-		C3BCE50020FE6EC50099B709 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BCE4FF20FE6EC50099B709 /* ViewController.swift */; };
+		C3BCE50020FE6EC50099B709 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BCE4FF20FE6EC50099B709 /* LoginViewController.swift */; };
 		C3BCE50520FE6EC50099B709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3BCE50420FE6EC50099B709 /* Assets.xcassets */; };
 		C3BCE51320FE6EC50099B709 /* AgendaTelefonicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BCE51220FE6EC50099B709 /* AgendaTelefonicaTests.swift */; };
 		C3BCE51E20FE6EC50099B709 /* AgendaTelefonicaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BCE51D20FE6EC50099B709 /* AgendaTelefonicaUITests.swift */; };
@@ -44,10 +52,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8392E24220FF661200FDB8E5 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		831B58132100B78200620585 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		831B58152100BEA000620585 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		831B58172100BEFF00620585 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		831B58192100C2E800620585 /* SessionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionControl.swift; sourceTree = "<group>"; };
+		831B581D2100C48000620585 /* Contatos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contatos.storyboard; sourceTree = "<group>"; };
+		831B581F2100C4FF00620585 /* ContatosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosViewController.swift; sourceTree = "<group>"; };
+		831B58262100C6AA00620585 /* Contato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
+		831B58282100CCD200620585 /* ContatosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatosViewModel.swift; sourceTree = "<group>"; };
+		831B582B2100D01D00620585 /* ContatoRequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoRequestFactory.swift; sourceTree = "<group>"; };
+		831B582D2100D03500620585 /* ContatoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoService.swift; sourceTree = "<group>"; };
 		8392E24520FF670C00FDB8E5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		8392E24720FF676400FDB8E5 /* Colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Colors.json; sourceTree = "<group>"; };
-		8392E24B20FF6E5900FDB8E5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		8392E24D20FF6EA700FDB8E5 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		8392E24E20FF6EA800FDB8E5 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		8392E24F20FF6EA800FDB8E5 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -59,7 +75,7 @@
 		B597981F389274E764BE0143 /* Pods_AgendaTelefonica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgendaTelefonica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BCE4FA20FE6EC50099B709 /* AgendaTelefonica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgendaTelefonica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BCE4FD20FE6EC50099B709 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3BCE4FF20FE6EC50099B709 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3BCE4FF20FE6EC50099B709 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C3BCE50420FE6EC50099B709 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3BCE50920FE6EC50099B709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3BCE50E20FE6EC50099B709 /* AgendaTelefonicaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgendaTelefonicaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +113,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		831B581B2100C44600620585 /* Contatos */ = {
+			isa = PBXGroup;
+			children = (
+				831B58212100C63500620585 /* Model */,
+				831B58222100C64600620585 /* ViewModel */,
+				831B58242100C66300620585 /* Controllers */,
+				831B58232100C65600620585 /* Service */,
+				831B581D2100C48000620585 /* Contatos.storyboard */,
+			);
+			path = Contatos;
+			sourceTree = "<group>";
+		};
+		831B58212100C63500620585 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				831B58262100C6AA00620585 /* Contato.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		831B58222100C64600620585 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				831B58282100CCD200620585 /* ContatosViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		831B58232100C65600620585 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				831B582B2100D01D00620585 /* ContatoRequestFactory.swift */,
+				831B582D2100D03500620585 /* ContatoService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		831B58242100C66300620585 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				831B581F2100C4FF00620585 /* ContatosViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		8392E23A20FF5F4100FDB8E5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +165,7 @@
 				8392E24420FF66D100FDB8E5 /* Generators */,
 				C3BCE50420FE6EC50099B709 /* Assets.xcassets */,
 				C3BCE50920FE6EC50099B709 /* Info.plist */,
-				8392E24B20FF6E5900FDB8E5 /* Launch Screen.storyboard */,
+				831B58172100BEFF00620585 /* Launch Screen.storyboard */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -113,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				C3BCE4FD20FE6EC50099B709 /* AppDelegate.swift */,
+				831B58192100C2E800620585 /* SessionControl.swift */,
 				8392E23A20FF5F4100FDB8E5 /* Supporting Files */,
 			);
 			path = Application;
@@ -121,7 +183,7 @@
 		8392E23C20FF64DF00FDB8E5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C3BCE4FF20FE6EC50099B709 /* ViewController.swift */,
+				C3BCE4FF20FE6EC50099B709 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -166,7 +228,7 @@
 		8392E25D20FF7BE300FDB8E5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				8392E24220FF661200FDB8E5 /* Login.storyboard */,
+				831B58132100B78200620585 /* UserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -207,7 +269,7 @@
 			children = (
 				8392E23B20FF64A200FDB8E5 /* Application */,
 				C3BCE52B20FE6F050099B709 /* Login */,
-				8392E23C20FF64DF00FDB8E5 /* Controllers */,
+				831B581B2100C44600620585 /* Contatos */,
 			);
 			path = AgendaTelefonica;
 			sourceTree = "<group>";
@@ -233,9 +295,11 @@
 		C3BCE52B20FE6F050099B709 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				831B58152100BEA000620585 /* Main.storyboard */,
 				8392E25A20FF781C00FDB8E5 /* Model */,
 				8392E25D20FF7BE300FDB8E5 /* ViewModel */,
 				8392E25520FF743500FDB8E5 /* Service */,
+				8392E23C20FF64DF00FDB8E5 /* Controllers */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -358,10 +422,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8392E24320FF661200FDB8E5 /* Login.storyboard in Resources */,
 				8392E24820FF676400FDB8E5 /* Colors.json in Resources */,
+				831B581E2100C48000620585 /* Contatos.storyboard in Resources */,
+				831B58162100BEA000620585 /* Main.storyboard in Resources */,
 				8392E24620FF670C00FDB8E5 /* Localizable.strings in Resources */,
-				8392E24C20FF6E5900FDB8E5 /* Launch Screen.storyboard in Resources */,
+				831B58182100BEFF00620585 /* Launch Screen.storyboard in Resources */,
 				C3BCE50520FE6EC50099B709 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,10 +521,17 @@
 				8392E25220FF6EA800FDB8E5 /* Storyboard.swift in Sources */,
 				8392E25320FF6EA800FDB8E5 /* Colors.swift in Sources */,
 				8392E25720FF746300FDB8E5 /* LoginRequestFactory.swift in Sources */,
-				C3BCE50020FE6EC50099B709 /* ViewController.swift in Sources */,
+				831B58142100B78200620585 /* UserViewModel.swift in Sources */,
+				C3BCE50020FE6EC50099B709 /* LoginViewController.swift in Sources */,
+				831B58292100CCD200620585 /* ContatosViewModel.swift in Sources */,
+				831B58202100C4FF00620585 /* ContatosViewController.swift in Sources */,
 				C3BCE4FE20FE6EC50099B709 /* AppDelegate.swift in Sources */,
+				831B582E2100D03500620585 /* ContatoService.swift in Sources */,
+				831B581A2100C2E800620585 /* SessionControl.swift in Sources */,
+				831B582C2100D01D00620585 /* ContatoRequestFactory.swift in Sources */,
 				8392E25C20FF782900FDB8E5 /* User.swift in Sources */,
 				8392E25420FF6EA800FDB8E5 /* Localizable.swift in Sources */,
+				831B58272100C6AA00620585 /* Contato.swift in Sources */,
 				8392E25120FF6EA800FDB8E5 /* Assets.swift in Sources */,
 				8392E25920FF747F00FDB8E5 /* LoginService.swift in Sources */,
 			);

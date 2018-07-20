@@ -8,24 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class LoginViewController: UIViewController {
+    
+    //MARK: - Vars
+    var service: LoginService!
+    
     //MARK: - UI Elements
-    @IBOutlet weak var AgendaTelefonicaImage: UIImageView!
+
+    @IBOutlet weak var agendaTelefonica: UIImageView!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var senha: UITextField!
     @IBOutlet weak var entrarButton: UIButton!
     @IBOutlet weak var cadastrarButton: UIButton!
     
-    //MARK:
-    var nome: String!
-    var service: LoginService!
-    
     //MARK: - Life
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        self.service = LoginService(delegate: self)
         
-        self.AgendaTelefonicaImage.image = Asset.agendaTenefonica.image
+        self.email.text = "joaofelipe@gmail.com"
+        self.senha.text = "12345678"
+        
+        self.agendaTelefonica.image = Asset.agendaTelefonica.image
         
         self.email.placeholder = L10n.Login.entrar
         self.senha.placeholder = L10n.Login.senha
@@ -39,17 +44,26 @@ class ViewController: UIViewController {
         self.cadastrarButton.setTitleColor(.white, for: .normal)
         self.cadastrarButton.layer.cornerRadius = self.cadastrarButton.bounds.height / 2
         self.cadastrarButton.backgroundColor = .blue
-        
-        self.service = LoginService()
+    
     }
     
     //MARK: - Actions
-    @IBAction func logar(_ sender: UIButton) {
-        
+    @IBAction func logar(_ sender: Any) {
+    
         if let email = self.email.text, let senha = self.senha.text{
             
             self.service.postLogin(email: email, senha: senha)
-        }
+        } 
     }
 }
 
+extension LoginViewController: LoginServiceDelegate {
+    func postLoginSuccess() {
+        self.perform(segue: StoryboardSegue.Main.segueEntrar)
+    }
+    
+    func postLoginFailure(error: String) {
+        
+        print(error)
+    }
+}

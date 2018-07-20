@@ -18,44 +18,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="AgendaTenefonica" translatesAutoresizingMaskIntoConstraints="NO" id="ywU-OA-m3d">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="agendaTelefonica" translatesAutoresizingMaskIntoConstraints="NO" id="ywU-OA-m3d">
                                 <rect key="frame" x="48" y="80" width="279" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="g8H-wA-kmV"/>
+                                </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="E-mail" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nuE-YQ-cFh">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="E-mail" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nuE-YQ-cFh">
                                 <rect key="frame" x="16" y="283" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Senha" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Isf-iU-oWB">
-                                <rect key="frame" x="16" y="363" width="343" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Senha" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Isf-iU-oWB">
+                                <rect key="frame" x="16" y="345" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQt-hp-cYf">
-                                <rect key="frame" x="16" y="426" width="343" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQt-hp-cYf">
+                                <rect key="frame" x="16" y="411" width="343" height="30"/>
                                 <state key="normal" title="Entrar"/>
                                 <connections>
-                                    <action selector="entrarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Hr-Kh-lrS"/>
-                                    <action selector="logar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wcv-BK-RiN"/>
+                                    <action selector="logar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tj8-gV-Ql0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb0-PE-IOt">
-                                <rect key="frame" x="16" y="487" width="343" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb0-PE-IOt">
+                                <rect key="frame" x="16" y="477" width="343" height="30"/>
                                 <state key="normal" title="Cadastrar"/>
-                                <connections>
-                                    <action selector="cadastrarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s8O-Al-sfs"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ywU-OA-m3d" secondAttribute="trailing" constant="48" id="0Jq-8P-n2A"/>
+                            <constraint firstItem="nuE-YQ-cFh" firstAttribute="top" secondItem="ywU-OA-m3d" secondAttribute="bottom" constant="75" id="4PB-hw-IpF"/>
                             <constraint firstItem="bb0-PE-IOt" firstAttribute="top" secondItem="DQt-hp-cYf" secondAttribute="bottom" constant="36" id="4Qs-ox-uyq"/>
                             <constraint firstItem="Isf-iU-oWB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5p4-Aj-qfZ"/>
                             <constraint firstItem="DQt-hp-cYf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6TS-L6-XDh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nuE-YQ-cFh" secondAttribute="trailing" constant="16" id="8PX-1m-Q5M"/>
+                            <constraint firstItem="ywU-OA-m3d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="DRk-WT-1BC"/>
                             <constraint firstItem="ywU-OA-m3d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I6U-ed-npp"/>
                             <constraint firstItem="nuE-YQ-cFh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L8p-JP-GEX"/>
                             <constraint firstItem="Isf-iU-oWB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pp0-Gk-y7q"/>
@@ -73,7 +74,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="AgendaTelefonicaImage" destination="ywU-OA-m3d" id="fnJ-uc-9c6"/>
                         <outlet property="cadastrarButton" destination="bb0-PE-IOt" id="QVy-ol-Kvv"/>
                         <outlet property="email" destination="nuE-YQ-cFh" id="hsH-gm-Pne"/>
                         <outlet property="entrarButton" destination="DQt-hp-cYf" id="BvX-FL-Vw3"/>
@@ -85,6 +85,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AgendaTenefonica" width="512" height="512"/>
+        <image name="agendaTelefonica" width="512" height="512"/>
     </resources>
 </document>

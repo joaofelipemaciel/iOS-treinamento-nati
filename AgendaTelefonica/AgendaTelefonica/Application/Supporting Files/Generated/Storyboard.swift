@@ -50,19 +50,27 @@ extension UIViewController {
 
 // swiftlint:disable explicit_type_interface identifier_name line_length type_body_length type_name
 enum StoryboardScene {
+  enum Contatos: StoryboardType {
+    static let storyboardName = "Contatos"
+
+    static let initialScene = InitialSceneType<UINavigationController>(storyboard: Contatos.self)
+  }
   enum LaunchScreen: StoryboardType {
     static let storyboardName = "Launch Screen"
 
     static let initialScene = InitialSceneType<UIViewController>(storyboard: LaunchScreen.self)
   }
-  enum Login: StoryboardType {
-    static let storyboardName = "Login"
+  enum Main: StoryboardType {
+    static let storyboardName = "Main"
 
-    static let initialScene = InitialSceneType<AgendaTelefonica.ViewController>(storyboard: Login.self)
+    static let initialScene = InitialSceneType<AgendaTelefonica.LoginViewController>(storyboard: Main.self)
   }
 }
 
 enum StoryboardSegue {
+  enum Main: String, SegueType {
+    case segueEntrar
+  }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name
 

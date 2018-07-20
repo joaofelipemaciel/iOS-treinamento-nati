@@ -10,16 +10,32 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var matriculadosCounterView: MatriculaCounter!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.matriculadosCounterView.dataSource = self
+        self.matriculadosCounterView.delegate = self
+        self.matriculadosCounterView.reloadData()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
+extension ViewController: MatriculaCounterDataSource, MatriculaCounterDelegate {
+  
+    func didSelect() {
+        print("Tap na Controller")
+    }
+    
+    func colorOfText() -> UIColor {
+        
+        return .orange
+    }
+    
+    func numberOfLabel() -> Int {
+        return 7
+    }
+    
+}
